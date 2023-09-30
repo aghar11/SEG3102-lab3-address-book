@@ -6,10 +6,14 @@ describe('AddressListComponent', () => {
   let component: AddressListComponent;
   let fixture: ComponentFixture<AddressListComponent>;
 
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ AddressListComponent ]
+    })
+    .compileComponents();
+  });
+
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [AddressListComponent]
-    });
     fixture = TestBed.createComponent(AddressListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

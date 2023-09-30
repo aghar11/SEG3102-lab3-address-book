@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { AddressEntry } from './address-entry';
-import { NotificationService } from './notification.service';
+import {Component} from '@angular/core';
+import {AddressEntry} from './address-entry';
+import {NotificationService} from './notification.service';
 
 @Component({
   selector: 'app-address-list',
@@ -11,8 +11,7 @@ import { NotificationService } from './notification.service';
 export class AddressListComponent {
   addresses: AddressEntry[] = [];
   currentAddress: AddressEntry | null = null;
-
-  constructor(private notificationService: NotificationService) {}
+  constructor(private notificationService: NotificationService) { }
 
   select(address: AddressEntry): void {
     this.currentAddress = address;

@@ -6,10 +6,14 @@ describe('AddressViewComponent', () => {
   let component: AddressViewComponent;
   let fixture: ComponentFixture<AddressViewComponent>;
 
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ AddressViewComponent ]
+    })
+    .compileComponents();
+  });
+
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [AddressViewComponent]
-    });
     fixture = TestBed.createComponent(AddressViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
